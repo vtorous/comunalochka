@@ -12,214 +12,212 @@
 
 <body>
 
-    <div class="row">
-        <div class="col">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark col-sm">
-                <a class="navbar-brand" href="#">Комунальний записник</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Navigation -->
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active pl-2">
-                            <a class="nav-link" href="#">Оплата</a>
-                        </li>
-                        <li class="nav-item pl-2">
-                            <a class="nav-link" href="stats.html">Статистика</a>
-                        </li>
-                        <li class="nav-item pl-2">
-                            <a class="nav-link" href="settings.html">Налаштування</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-
+<nav class="navbar navbar-expand-md navbar-dark bg-dark col-sm">
     <div class="container">
-        <!-- Month select -->
-        <div class="row my-5">
-            <div class="col-md-3">
-                <button type="button" class="btn btn-link mt-1"> &larr; Березень 2018</button>
-            </div>
-            <div class="col-md-6 text-md-center">
-                <select class="form-control form-control-lg d-inline-block w-auto">
-                    <option>Січень</option>
-                    <option>Лютий</option>
-                    <option>Березень</option>
-                    <option selected>Квітень</option>
-                    <option>Травень</option>
-                    <option>Червень</option>
-                </select>
-                <select class="form-control form-control-lg d-inline-block w-auto">
-                    <option>2015</option>
-                    <option>2016</option>
-                    <option>2017</option>
-                    <option selected>2018</option>
-                </select>
-            </div>
+        <a class="navbar-brand" href="#">Комунальний записник</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="col-md-3 text-md-right">
-                <button type="button" class="btn btn-link mt-1">Травень 2018 &rarr;</button>
-            </div>
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active pl-2">
+                    <a class="nav-link" href="#">Оплата</a>
+                </li>
+                <li class="nav-item pl-2">
+                    <a class="nav-link" href="stats.html">Статистика</a>
+                </li>
+                <li class="nav-item pl-2">
+                    <a class="nav-link" href="settings.html">Налаштування</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <!-- Month select -->
+    <div class="row my-5">
+        <div class="col-md-3">
+            <button type="button" class="btn btn-link mt-1"> &larr; Березень 2018</button>
+        </div>
+        <div class="col-md-6 text-md-center">
+            <select class="form-control form-control-lg d-inline-block w-auto">
+                <option>Січень</option>
+                <option>Лютий</option>
+                <option>Березень</option>
+                <option selected>Квітень</option>
+                <option>Травень</option>
+                <option>Червень</option>
+            </select>
+            <select class="form-control form-control-lg d-inline-block w-auto">
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option selected>2018</option>
+            </select>
         </div>
 
-        <!-- Category light -->
-        <h5 class="text-primary mt-4">Світло</h5>
-        <hr class="mt-auto">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="row py-2">
-                    <div class="col-md-8 text-md-right">
-                        Показник лічильника на початок місяця
-                    </div>
-                    <div class="col-md-4 text-success">
-                        <h5>252568</h>
-                    </div>
+        <div class="col-md-3 text-md-right">
+            <button type="button" class="btn btn-link mt-1">Травень 2018 &rarr;</button>
+        </div>
+    </div>
+
+    <!-- Category light -->
+    <h5 class="text-primary mt-4">Світло</h5>
+    <hr class="mt-auto">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row py-2">
+                <div class="col-md-8 text-md-right">
+                    Показник лічильника на початок місяця
                 </div>
-                <div class="row py-2">
-                    <div class="col-md-8 text-md-right">
-                        Показник лічильника на кінець місяця
-                    </div>
-                    <!-- <div class="col-md-3">3252568</div> -->
-                    <div class="form-group col-md-4">
-                        <input type="text" class="form-control" id="example" placeholder="Показник">
-                    </div>
-                </div>
-                <div class="row py-2">
-                    <div class="col-md-8 col-5 text-md-right">
-                        <button type="button" class="btn btn-primary">Розрахувати</button>
-                    </div>
-                    <div class="col-md-4 col-5 text-danger">
-                        <h5>245.45<small class=""> грн.</small>
-                        </h>
-                    </div>
+                <div class="col-md-4 text-success">
+                    <h5>252568</h>
                 </div>
             </div>
-            <div class="col-md-3 text-md-center form-group">
-                <div class="row h-100  bg-light">
-                    <div class="col m-auto">
-                        <div class="form-check form-check-inline">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <button type="button" class="btn btn-primary ml-4">Оплатити</button>
-                        </div>
-                    </div>
+            <div class="row py-2">
+                <div class="col-md-8 text-md-right">
+                    Показник лічильника на кінець місяця
+                </div>
+                <!-- <div class="col-md-3">3252568</div> -->
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" id="example" placeholder="Показник">
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col-md-8 col-5 text-md-right">
+                    <button type="button" class="btn btn-primary">Розрахувати</button>
+                </div>
+                <div class="col-md-4 col-5 text-danger">
+                    <h5>245.45<small class=""> грн.</small>
+                    </h>
                 </div>
             </div>
         </div>
-
-        <!-- Category natural gas -->
-        <h5 class="text-primary mt-5">Газ</h5>
-        <hr class="mt-auto">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="row py-2">
-                    <div class="col-md-8 text-md-right">
-                        Показник лічильника на початок місяця
-                    </div>
-                    <div class="col-md-4 text-success">
-                        <h5>252568</h>
-                    </div>
-                </div>
-                <div class="row py-2">
-                    <div class="col-md-8 text-md-right">
-                        Показник лічильника на кінець місяця
-                    </div>
-                    <!-- <div class="col-md-3">3252568</div> -->
-                    <div class="col-md-4 text-success">
-                        <h5>252568</h>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 text-md-center form-group">
-                <div class="row h-100  bg-light">
-                    <div class="col m-auto">
-                        <div class="form-check form-check-inline">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked disabled>
-                                <label class="form-check-label" for="inlineCheckbox1"> <h5 class="text-muted">345<small class=""> грн.</small></label>
-                            </div>
-                        </div>
+        <div class="col-md-3 text-md-center form-group">
+            <div class="row h-100  bg-light">
+                <div class="col m-auto">
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <button type="button" class="btn btn-primary ml-4">Оплатити</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Garbage -->
-        <h5 class="text-primary mt-5">Вивіз сміття</h5>
-        <hr class="mt-auto">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="row py-2">
-                    <div class="col-md-8 text-md-right">
-                        <p>Оплачено</p>
-                    </div>
-                    <div class="form-group col-md-4">
-                        <input type="text" class="form-control" id="example" placeholder="Сума">
-                    </div>
+    <!-- Category natural gas -->
+    <h5 class="text-primary mt-5">Газ</h5>
+    <hr class="mt-auto">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row py-2">
+                <div class="col-md-8 text-md-right">
+                    Показник лічильника на початок місяця
+                </div>
+                <div class="col-md-4 text-success">
+                    <h5>252568</h>
                 </div>
             </div>
-            <div class="col-md-3 text-md-center form-group">
-                <div class="row h-100  bg-light">
-                    <div class="col m-auto">
-                        <div class="form-check form-check-inline">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <button type="button" class="btn btn-primary ml-4">Оплатити</button>
-                        </div>
-                    </div>
+            <div class="row py-2">
+                <div class="col-md-8 text-md-right">
+                    Показник лічильника на кінець місяця
+                </div>
+                <!-- <div class="col-md-3">3252568</div> -->
+                <div class="col-md-4 text-success">
+                    <h5>252568</h>
                 </div>
             </div>
         </div>
-
-        <!-- Garbage -->
-        <h5 class="text-primary mt-5">Квартплата</h5>
-        <hr class="mt-auto">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="row py-2">
-                    <div class="col text-md-right">
-                        Сплачено
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 text-md-center form-group">
-                <div class="row h-100  bg-light">
-                    <div class="col m-auto">
+        <div class="col-md-3 text-md-center form-group">
+            <div class="row h-100  bg-light">
+                <div class="col m-auto">
+                    <div class="form-check form-check-inline">
                         <div class="form-check form-check-inline">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked disabled>
-                                <label class="form-check-label" for="inlineCheckbox1"> <h5 class="text-muted">345<small class=""> грн.</small></label>
-                            </div>
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked disabled>
+                            <label class="form-check-label" for="inlineCheckbox1"> <h5 class="text-muted">345<small class=""> грн.</small></label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer -->
-    <footer class="mt-5 pt-5 text-muted text-center text-small bg-light">
-        <p class="mb-1">© 2018- Записник оплати комунальних послуг</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Головна</a></li>
-            <li class="list-inline-item"><a href="#">Звіти</a></li>
-            <li class="list-inline-item"><a href="#">Налаштування</a></li>
-        </ul>
-    </footer>
+
+    <!-- Garbage -->
+    <h5 class="text-primary mt-5">Вивіз сміття</h5>
+    <hr class="mt-auto">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row py-2">
+                <div class="col-md-8 text-md-right">
+                    <p>Оплачено</p>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" id="example" placeholder="Сума">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 text-md-center form-group">
+            <div class="row h-100  bg-light">
+                <div class="col m-auto">
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <button type="button" class="btn btn-primary ml-4">Оплатити</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Garbage -->
+    <h5 class="text-primary mt-5">Квартплата</h5>
+    <hr class="mt-auto">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row py-2">
+                <div class="col text-md-right">
+                    Сплачено
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 text-md-center form-group">
+            <div class="row h-100  bg-light">
+                <div class="col m-auto">
+                    <div class="form-check form-check-inline">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked disabled>
+                            <label class="form-check-label" for="inlineCheckbox1"> <h5 class="text-muted">345<small class=""> грн.</small></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="mt-5 pt-5 text-muted text-center text-small bg-light">
+    <p class="mb-1">© 2018- Записник оплати комунальних послуг</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Головна</a></li>
+        <li class="list-inline-item"><a href="#">Звіти</a></li>
+        <li class="list-inline-item"><a href="#">Налаштування</a></li>
+    </ul>
+</footer>
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
