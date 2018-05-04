@@ -7,14 +7,14 @@
 
     <link rel="stylesheet" href="css/main.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
-    <title>Записник оплати комунальних послуг</title>
+    <title>Housing payments</title>
 </head>
 
 <body class="bg-light">
 
 <div class="container bg-info">
     <nav class="navbar navbar-expand-md navbar-dark col-sm">
-        <a class="navbar-brand" href="#">Комунальний записник</a>
+        <a class="navbar-brand" href="#"><strong>Housing payments</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,35 +24,42 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active pl-2">
-                    <a class="nav-link" href="#">Оплата</a>
+                    <a class="nav-link" href="index.html">My payments</a>
                 </li>
                 <li class="nav-item pl-2">
-                    <a class="nav-link" href="stats.html">Статистика</a>
+                    <a class="nav-link" href="stats.html">Statistics</a>
                 </li>
                 <li class="nav-item pl-2">
-                    <a class="nav-link" href="settings.html">Налаштування</a>
+                    <a class="nav-link" href="settings.html">Settings</a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
+<div class="container bg-white">
+    <div class="row">
+        <div class="col pt-4 pb-1">
+            <h1 class="pageheader">My payments</h1>
+        </div>
+    </div>
+</div>
 
 <div class="container bg-white">
     <!-- Month select -->
-    <div class="row">
-        <div class="col-md-3">
-            <button type="button" class="btn btn-link mt-1"> &larr; Березень 2018</button>
+    <div class="row py-3">
+        <div class="col-md">
+            <button type="button" class="btn btn-active mt-1"> &larr; April 2018</button>
         </div>
-        <div class="col-md-6 text-md-center">
-            <select class="form-control form-control-lg d-inline-block w-auto">
-                <option>Січень</option>
-                <option>Лютий</option>
-                <option>Березень</option>
-                <option selected>Квітень</option>
-                <option>Травень</option>
-                <option>Червень</option>
+        <div class="col-md text-md-center">
+            <select class="form-control form-control-lg form-control-plaintext d-inline-block w-auto">
+                <option>January</option>
+                <option>Ferburary</option>
+                <option>March</option>
+                <option>April</option>
+                <option selected>May</option>
+                <option>June</option>
             </select>
-            <select class="form-control form-control-lg d-inline-block w-auto">
+            <select class="form-control form-control-lg form-control-plaintext d-inline-block w-auto">
                 <option>2015</option>
                 <option>2016</option>
                 <option>2017</option>
@@ -60,184 +67,197 @@
             </select>
         </div>
 
-        <div class="col-md-3 text-md-right">
-            <button type="button" class="btn btn-link mt-1">Травень 2018 &rarr;</button>
+        <div class="col-md text-md-right">
+            <button type="button" class="btn btn-active mt-1">September 2018 &rarr;</button>
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            <strong>Electrycity</strong>
+
+    <!-- Electrycity category -->
+    <div class="card mb-4 border-warning">
+        <div class="card-header bg-warning text-white">
+            <strong class="text-uppercase">Electrycity</strong>
         </div>
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-9 col-lg-10">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
                         <span class="float-left">Meter in the beginning of the month</span>
-                        <span class="text-muted float-right"><strong>3525</strong></span>
+                        <span class="float-right"><strong>3525</strong></span>
                     </li>
                     <li class="list-group-item">
-                        <span>Meter in the end of the month</span>
+                        <span class="align-middle">Meter in the end of the month</span>
                         <span class="float-right">
-                            <input type="email" width="6" class="form-control text-right" id="xxxxx" placeholder="kWh">
+                            <input type="text" class="form-control text-right" id="xxxxx" placeholder="kWh">
                         </span>
                     </li>
-                    <li class="list-group-item">
-                        <span><a href="#" class="btn btn-primary">Calculate</a></span>
-                        <span class="text-danger float-right"><strong>3525.25</strong> uah</span>
+                    <li class="list-group-item text-right">
+                        <span class="align-middle "><a href="#" class="btn btn-secondary">Calculate</a></span>
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4 h-100 m-auto text-center">
-                    <div class="form-check form-check-inline">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <button type="button" class="btn btn-primary ml-4">&nbsp;Pay&nbsp;</button>
-                    </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Category light -->
-    <h5 class="text-primary mt-4">Світло</h5>
-    <hr class="mt-auto">
-    <div class="row">
-        <div class="col-md-9">
-            <div class="row py-2">
-                <div class="col-md-8 text-md-right">
-                    Показник лічильника на початок місяця
-                </div>
-                <div class="col-md-4 text-success">
-                    <h5>252568</h>
-                </div>
-            </div>
-            <div class="row py-2">
-                <div class="col-md-8 text-md-right">
-                    Показник лічильника на кінець місяця
-                </div>
-                <!-- <div class="col-md-3">3252568</div> -->
-                <div class="form-group col-md-4">
-                    <input type="text" class="form-control" id="example" placeholder="Показник">
-                </div>
-            </div>
-            <div class="row py-2">
-                <div class="col-md-8 col-5 text-md-right">
-                    <button type="button" class="btn btn-primary">Розрахувати</button>
-                </div>
-                <div class="col-md-4 col-5 text-danger">
-                    <h5>245.45<small class=""> грн.</small>
-                    </h>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 text-md-center form-group">
-            <div class="row h-100  bg-light">
-                <div class="col m-auto">
-                    <div class="form-check form-check-inline">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <button type="button" class="btn btn-primary ml-4">Оплатити</button>
-                    </div>
+            <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                <hr class="mt-0 d-md-none"> 
+                <span class="text-muted text-large mr-3 b-5">175 uah.</span>
+                <div class="form-check form-check-inline mt-1">
+                    <input type="checkbox" class="form-check-input large-checkbox" id="exampleCheck1">
+                    <button type="button" class="btn btn-secondary ml-1">&nbsp;Pay&nbsp;</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Category natural gas -->
-    <h5 class="text-primary mt-5">Газ</h5>
-    <hr class="mt-auto">
-    <div class="row">
-        <div class="col-md-9">
-            <div class="row py-2">
-                <div class="col-md-8 text-md-right">
-                    Показник лічильника на початок місяця
-                </div>
-                <div class="col-md-4 text-success">
-                    <h5>252568</h>
-                </div>
+    <!-- Rent category -->
+    <div class="card mb-4 border-warning">
+            <div class="card-header bg-warning text-white">
+                <strong class="text-uppercase">Rent</strong>
             </div>
-            <div class="row py-2">
-                <div class="col-md-8 text-md-right">
-                    Показник лічильника на кінець місяця
+            <div class="row">
+                <div class="col-md-9 col-lg-10">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span class="align-middle">Month payment</span>
+                            <span class="float-right">
+                                <input type="text" class="form-control text-right" id="xxxx" placeholder="uah">
+                            </span>
+                        </li>
+                    </ul>
                 </div>
-                <!-- <div class="col-md-3">3252568</div> -->
-                <div class="col-md-4 text-success">
-                    <h5>252568</h>
+                <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                    <hr class="mt-0 d-md-none"> 
+                    <div class="form-check form-check-inline bg">
+                            <input type="checkbox" class="form-check-input large-checkbox" id="exampleCheck1">
+                        <button type="button" class="btn btn-secondary ml-1">&nbsp;Pay&nbsp;</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 text-md-center form-group">
-            <div class="row h-100  bg-light">
-                <div class="col m-auto">
-                    <div class="form-check form-check-inline">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked disabled>
-                            <label class="form-check-label" for="inlineCheckbox1"> <h5 class="text-muted">345<small class=""> грн.</small></label>
-                        </div>
-                    </div>
+        
+    <!-- Natural gas category -->
+    <div class="card mb-4 border-secondary">
+            <div class="card-header text-muted">
+                <strong class="text-uppercase">Natural gas</strong>
+            </div>
+            <div class="row">
+                <div class="col-md-9 col-lg-10">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span class="text-muted float-left">Meter in the beginning of the month</span>
+                            <span class="text-muted float-right"><strong>29562</strong></span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="text-muted align-middle">Meter in the end of the month</span>
+                            <span class="text-muted float-right"><strong>31025</strong></span>
+                        </li>
+                    </ul>
                 </div>
+                <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                    <hr class="mt-0 d-md-none"> 
+                    <span class="text-muted text-large">175 uah.</span>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Water category -->
+    <div class="card mb-4 border-secondary">
+        <div class="card-header text-muted">
+            <strong class="text-uppercase">Water</strong>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-lg-10">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <span class="text-muted float-left">Meter in the beginning of the month</span>
+                        <span class="text-muted float-right"><strong>328</strong></span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="text-muted align-middle">Meter in the end of the month</span>
+                        <span class="text-muted float-right"><strong>359</strong></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                <hr class="mt-0 d-md-none"> 
+                <span class="text-muted text-large">86 uah.</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Garbage category -->
+    <div class="card mb-4 border-secondary">
+        <div class="card-header">
+            <strong class="text-uppercase">Garbage</strong>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-lg-10">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <span class="align-middle">The amount of payment for this month</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                <hr class="mt-0 d-md-none"> 
+                <span class="text-muted text-large">23.25 uah.</span>
             </div>
         </div>
     </div>
 
-    <!-- Garbage -->
-    <h5 class="text-primary mt-5">Вивіз сміття</h5>
-    <hr class="mt-auto">
-    <div class="row">
-        <div class="col-md-9">
-            <div class="row py-2">
-                <div class="col-md-8 text-md-right">
-                    <p>Оплачено</p>
-                </div>
-                <div class="form-group col-md-4">
-                    <input type="text" class="form-control" id="example" placeholder="Сума">
-                </div>
-            </div>
+    <!-- Garbage category -->
+    <div class="card mb-4 border-secondary">
+        <div class="card-header">
+            <strong class="text-uppercase">Garbage</strong>
         </div>
-        <div class="col-md-3 text-md-center form-group">
-            <div class="row h-100  bg-light">
-                <div class="col m-auto">
-                    <div class="form-check form-check-inline">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <button type="button" class="btn btn-primary ml-4">Оплатити</button>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-md-9 col-lg-10">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <span class="align-middle">The amount of payment for this month</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                <hr class="mt-0 d-md-none"> 
+                <span class="text-muted text-large">106 uah.</span>
             </div>
         </div>
     </div>
 
-    <!-- Garbage -->
-    <h5 class="text-primary mt-5">Квартплата</h5>
-    <hr class="mt-auto">
-    <div class="row">
-        <div class="col-md-9">
-            <div class="row py-2">
-                <div class="col text-md-right">
-                    Сплачено
-                </div>
-            </div>
+    <!-- Internet category -->
+    <div class="card mb-4 border-secondary">
+        <div class="card-header">
+            <strong class="text-uppercase">Internet</strong>
         </div>
-        <div class="col-md-3 text-md-center form-group">
-            <div class="row h-100  bg-light">
-                <div class="col m-auto">
-                    <div class="form-check form-check-inline">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked disabled>
-                            <label class="form-check-label" for="inlineCheckbox1"> <h5 class="text-muted">345<small class=""> грн.</small></label>
-                        </div>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-md-9 col-lg-10">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <span class="align-middle">The amount of payment for this month</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                <hr class="mt-0 d-md-none"> 
+                <span class="text-muted text-large">186 uah.</span>
             </div>
         </div>
     </div>
+    <br>
+
+
 </div>
+ 
+
 
 <!-- Footer -->
 <div class="container footer">
     <footer class="py-2 text-muted text-center text-small">
-        <p class="mb-1">© 2018- Записник оплати комунальних послуг</p>
+        <p class="mb-1">© 2018 - Housing payments</p>
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="index.html">Головна</a></li>
-            <li class="list-inline-item"><a href="settings.html">Звіти</a></li>
-            <li class="list-inline-item"><a href="stats.html">Налаштування</a></li>
+            <li class="list-inline-item"><a href="index.html">My payments</a></li>
+            <li class="list-inline-item"><a href="settings.html">Statistics</a></li>
+            <li class="list-inline-item"><a href="stats.html">settings</a></li>
         </ul>
     </footer>
 </div>
@@ -247,12 +267,12 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
 </body>
 
 </html>

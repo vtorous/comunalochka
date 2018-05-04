@@ -7,13 +7,14 @@
 
     <link rel="stylesheet" href="css/main.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
-    <title>Записник оплати комунальних послуг</title>
+    <title>Housing payments</title>
 </head>
 
-<body>
+<body class="bg-light">
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark col-sm">
-        <a class="navbar-brand" href="#">Комунальний записник</a>
+<div class="container bg-info">
+    <nav class="navbar navbar-expand-md navbar-dark col-sm">
+        <a class="navbar-brand" href="#"><strong>Housing payments</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,90 +24,254 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item pl-2">
-                    <a class="nav-link" href="#">Оплата</a>
+                    <a class="nav-link" href="index.html">My payments</a>
                 </li>
                 <li class="nav-item pl-2">
-                    <a class="nav-link" href="stats.html">Статистика</a>
+                    <a class="nav-link" href="stats.html">Statistics</a>
                 </li>
                 <li class="nav-item active pl-2">
-                    <a class="nav-link" href="settings.html">Налаштування</a>
+                    <a class="nav-link" href="settings.html">Settings</a>
                 </li>
             </ul>
         </div>
     </nav>
+</div>
+<div class="container bg-white">
+    <div class="row">
+        <div class="col pt-4 pb-1">
+            <h1 class="pageheader">My payments</h1>
+        </div>
+    </div>
+</div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h4 class="mb-3 mt-5">Нашаштування</h4>
-                <hr>
-                <div class="row">
-                    <div class="col-md-5 col-7 mb-3">
-                        <label for="country">Почати облік (рік)</label>
-                        <select class="custom-select d-block w-100" id="start_year" required="">
-                            <option>2018</option>
-                            <option>2017</option>
-                            <option>2016</option>
-                            <option>2015</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3 col-5 mb-3">
-                        <label for="state">(місяць)</label>
-                        <select class="custom-select d-block w-100" id="start_months" required="">
-                            <option>Січень</option>
-                            <option>Лютий</option>
-                            <option>Березень</option>
-                            <option>Квітень</option>
-                            <option>Травень</option>
-                            <option>Червень</option>
-                            <option>Липень</option>
-                            <option>Серпень</option>
-                            <option>Вересень</option>
-                            <option>Жовтень</option>
-                            <option>Листопад</option>
-                            <option>Грудень</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="email">Ціна газу <span class="text-muted">(грн. за 1 метр кубічний)</span></label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="mb-3">
-                    <label for="email">Ціна води <span class="text-muted">(грн. за 1 метр кубічний)</span></label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="mb-3">
-                    <label for="email">Ціна електроенергії <span class="text-muted">(грн. за 1 Квт.год.)</span></label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <button class="btn btn-primary" type="submit">Зберегти</button>
-            </div>
+<div class="container bg-white">
+    <!-- Month select -->
+    <div class="row py-3">
+        <div class="col-md">
+            <button type="button" class="btn btn-active mt-1"> &larr; April 2018</button>
+        </div>
+        <div class="col-md text-md-center">
+            <select class="form-control form-control-lg form-control-plaintext d-inline-block w-auto">
+                <option>January</option>
+                <option>Ferburary</option>
+                <option>March</option>
+                <option>April</option>
+                <option selected>May</option>
+                <option>June</option>
+            </select>
+            <select class="form-control form-control-lg form-control-plaintext d-inline-block w-auto">
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option selected>2018</option>
+            </select>
+        </div>
+
+        <div class="col-md text-md-right">
+            <button type="button" class="btn btn-active mt-1">September 2018 &rarr;</button>
         </div>
     </div>
 
 
-    <!-- Footer -->
-    <footer class="mt-5 pt-5 text-muted text-center text-small bg-light">
-        <p class="mb-1">© 2018 - Записник оплати комунальних послуг</p>
+    <!-- Electrycity category -->
+    <div class="card mb-4 border-warning">
+        <div class="card-header bg-warning text-white">
+            <strong class="text-uppercase">Electrycity</strong>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-lg-10">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <span class="float-left">Meter in the beginning of the month</span>
+                        <span class="float-right"><strong>3525</strong></span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="align-middle">Meter in the end of the month</span>
+                        <span class="float-right">
+                            <input type="text" class="form-control text-right" id="xxxxx" placeholder="kWh">
+                        </span>
+                    </li>
+                    <li class="list-group-item text-right">
+                        <span class="align-middle "><a href="#" class="btn btn-secondary">Calculate</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                <hr class="mt-0 d-md-none"> 
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <button type="button" class="btn btn-secondary ml-4">&nbsp;Pay&nbsp;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rent category -->
+    <div class="card mb-4 border-warning">
+            <div class="card-header bg-warning text-white">
+                <strong class="text-uppercase">Rent</strong>
+            </div>
+            <div class="row">
+                <div class="col-md-9 col-lg-10">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span class="align-middle">Month payment</span>
+                            <span class="float-right">
+                                <input type="text" class="form-control text-right" id="xxxx" placeholder="uah">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                    <hr class="mt-0 d-md-none"> 
+                    <div class="form-check form-check-inline bg">
+                        <input type="checkbox" class="form-check-input" id="eampleCheck1">
+                        <button type="button" class="btn btn-secondaty ml-4">&nbsp;Pay&nbsp;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Natural gas category -->
+    <div class="card mb-4 border-secondary">
+            <div class="card-header text-muted">
+                <strong class="text-uppercase">Natural gas</strong>
+            </div>
+            <div class="row">
+                <div class="col-md-9 col-lg-10">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span class="text-muted float-left">Meter in the beginning of the month</span>
+                            <span class="text-muted float-right"><strong>3535</strong></span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="text-muted align-middle">Meter in the end of the month</span>
+                            <span class="text-muted float-right"><strong>3535</strong></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                    <hr class="mt-0 d-md-none"> 
+                    <span class="text-muted text-large">175 uah.</span>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Water category -->
+    <div class="card mb-4 border-secondary">
+        <div class="card-header text-muted">
+            <strong class="text-uppercase">Water</strong>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-lg-10">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <span class="text-muted float-left">Meter in the beginning of the month</span>
+                        <span class="text-muted float-right"><strong>328</strong></span>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="text-muted align-middle">Meter in the end of the month</span>
+                        <span class="text-muted float-right"><strong>359</strong></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                <hr class="mt-0 d-md-none"> 
+                <span class="text-muted text-large">86 uah.</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Garbage category -->
+    <div class="card mb-4 border-secondary">
+        <div class="card-header">
+            <strong class="text-uppercase">Garbage</strong>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-lg-10">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <span class="align-middle">The amount of payment for this month</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                <hr class="mt-0 d-md-none"> 
+                <span class="text-muted text-large">186 uah.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Garbage category -->
+    <div class="card mb-4 border-secondary">
+        <div class="card-header">
+            <strong class="text-uppercase">Garbage</strong>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-lg-10">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <span class="align-middle">The amount of payment for this month</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                <hr class="mt-0 d-md-none"> 
+                <span class="text-muted text-large">186 uah.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internet category -->
+    <div class="card mb-4 border-secondary">
+        <div class="card-header">
+            <strong class="text-uppercase">Internet</strong>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-lg-10">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <span class="align-middle">The amount of payment for this month</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-2 h-100 my-auto pb-3 pb-md-0 text-center">
+                <hr class="mt-0 d-md-none"> 
+                <span class="text-muted text-large">186 uah.</span>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+</div>
+ 
+
+
+<!-- Footer -->
+<div class="container footer">
+    <footer class="py-2 text-muted text-center text-small">
+        <p class="mb-1">© 2018 - Housing payments</p>
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="index.html">Головна</a></li>
-            <li class="list-inline-item"><a href="settings.html">Звіти</a></li>
-            <li class="list-inline-item"><a href="stats.html">Налаштування</a></li>
+            <li class="list-inline-item"><a href="index.html">My payments</a></li>
+            <li class="list-inline-item"><a href="settings.html">Statistics</a></li>
+            <li class="list-inline-item"><a href="stats.html">settings</a></li>
         </ul>
     </footer>
+</div>
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script> -->
 </body>
 
 </html>

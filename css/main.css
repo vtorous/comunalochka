@@ -11,3 +11,21 @@ body {
 .container.footer {
     background-color: #eee;
 }
+
+.text-large {
+    font-size: 125%;
+}
+
+.large-checkbox {
+    width: 25px;
+    height: 25px;
+}
+
+h1.pageheader {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.month-stats .list-group-item {
+    padding: 0.45rem 1.25rem;
+}
