@@ -1,4 +1,13 @@
-.big-checkbox {
-    width: 30px;
-    height: 30px;
+body {
+    background-color: red;
+}
+
+#main-container {
+    background: #fff;
+}
+.container{
+    box-shadow: 0 3px 15px lightgray;
+}
+.container.footer {
+    background-color: #eee;
 }
